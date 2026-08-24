@@ -1,0 +1,95 @@
+
+:root {
+    --couleur-fond: #ffffff;
+    --couleur-primaire: #332727;
+    --couleur-secondaire: #ebebeb;
+    --couleur-texte: #333333;
+    --police-principale: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
+    font-family: var(--police-principale);
+    line-height: 1.6;
+}
+
+
+header {
+    padding: 2rem 0;
+    text-align: center; 
+}
+
+main {
+    max-width: 1100px;
+    max-height: 2000px;
+    margin: 0 auto; 
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: stretch;
+}
+
+main > section {
+    flex: 1; 
+    min-height: 250px; 
+
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+main > section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Carré a lunité avec imaages */
+
+#A-propos {
+    background-image: 
+        linear-gradient(to bottom, rgba(172, 172, 172, 0) 40%, rgba(129, 129, 129, 0.95) 100%), 
+        url('assets/ton-image-1.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; 
+}
+#A-propos h2 {
+    color: #ffffff;
+}
+
+#Projets {
+    background-image: 
+        linear-gradient(to bottom, rgba(149, 210, 245, 0) 40%, rgba(139, 206, 245, 0.95) 100%), 
+        url('assets/miniatureprojet2.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; 
+}
+#Projets h2 {
+    color: #ffffff;
+}
+
+h1, h2 {
+    color: var(--couleur-primaire);
+    margin-bottom: 1rem;
+}
+
+
+section {
+    background-color: var(--couleur-secondaire);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px; 
+}
